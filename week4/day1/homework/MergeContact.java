@@ -54,7 +54,7 @@ public class MergeContact {
 		Set<String> allWindowHandles=driver.getWindowHandles();
 		System.out.println(allWindowHandles.size());
 		
-//  //To get the second window handle and switch to it
+		// To get the second window handle and switch to it
 		
 		List<String> lstWindows=new ArrayList<String>(allWindowHandles);
 		System.out.println(lstWindows.size());
@@ -94,10 +94,11 @@ public class MergeContact {
 		driver.findElement(By.xpath("(//div[@class='x-grid3-cell-inner x-grid3-col-partyId']//a)[2]")).click();
 //		  
 //		  11. Click on Merge button using Xpath Locator
-		Parentwindow=lstWindows.get(0);
-
+		
+			Parentwindow=lstWindows.get(0);
 			driver.switchTo().window(Parentwindow);
-	  driver.findElement(By.xpath("//a[text()='Merge']")).click();
+	  		driver.findElement(By.xpath("//a[text()='Merge']")).click();
+		
 //		  12. Accept the Alert
 	  
 	  		Alert alert=driver.switchTo().alert();
