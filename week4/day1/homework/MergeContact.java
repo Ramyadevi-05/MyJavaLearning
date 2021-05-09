@@ -108,7 +108,7 @@ public class MergeContact {
 	 
 	  			System.out.println(driver.getTitle());
 
-	  			//driver.closed();
+	  			driver.close();
 	}
 
 }
